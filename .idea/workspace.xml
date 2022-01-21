@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b882e4e-55ce-4c96-b876-091a18594a55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/exercitii-generale.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercitii3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercitii4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercitii5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercitii6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22uXo9x7N25VNDUiiGAwtqO15ZS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kalep\Desktop\exercitii-generale" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b882e4e-55ce-4c96-b876-091a18594a55" name="Changes" comment="" />
+      <created>1640688617982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640688617982</updated>
+      <workItem from="1640688619146" duration="224000" />
+      <workItem from="1640770667146" duration="976000" />
+      <workItem from="1640772844379" duration="2106000" />
+      <workItem from="1640783341629" duration="2136000" />
+      <workItem from="1640793995831" duration="2185000" />
+      <workItem from="1640859904668" duration="2572000" />
+      <workItem from="1640868239763" duration="2224000" />
+      <workItem from="1640881741692" duration="1632000" />
+      <workItem from="1640941881481" duration="520000" />
+      <workItem from="1640942416303" duration="4318000" />
+      <workItem from="1641124102867" duration="25000" />
+      <workItem from="1641125698947" duration="242000" />
+      <workItem from="1641226185019" duration="1713000" />
+      <workItem from="1641470184230" duration="24000" />
+      <workItem from="1642783900360" duration="359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
