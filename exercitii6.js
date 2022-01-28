@@ -71,9 +71,9 @@ const runners = [
 // let fullNames = [];
 const names = (object) => {
     return  object.map(index => index.first_name+" "+index.last_name)
-
 }
 // console.log(names(runners));
+
 // ==== Challenge 2: Use .map() ====
 // Directorul evenimentului trebuie să aibă toate prenumele alergătorilor
 // // cu majuscule.
@@ -106,13 +106,14 @@ const runnersLargeSizeShirt= (object) => {
 // în scopuri fiscale. Adăugați toate donațiile
 // și salvați totalul într-o variabilă
 // ticketPriceTotal.
+
 let ticketPriceTotal = 0;
 const fiscale = runners.reduce(function (index,item){
     return index + item.donation
 },ticketPriceTotal)
 
 
-console.log("Suma Donatiilor: " +fiscale);
+// console.log("Suma Donatiilor: " +fiscale);
 
 // ==== Challenge 5: Be Creative ====
 // Acum că ați folosit .forEach (), .map (),
@@ -126,10 +127,13 @@ console.log("Suma Donatiilor: " +fiscale);
 
 // Problema 1
 //Cautam in lista de donatii cea mai mare donatie
+
 const maxdonation = runners.reduce((max,object)=> {
     return object.donation > max.donation ? object : max;
 })
+
 // console.log(maxdonation);
+
 
 // Problema 2
 //Cauta persoanele care au ace easi suma de donati
