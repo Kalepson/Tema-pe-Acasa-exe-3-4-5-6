@@ -10,8 +10,6 @@ let ani = 30;
 let nume = "Alexei"
 
 
-
-
 // 🏡 Task 1.5:  Math
 /* Pentru a crea un calculator al ratei ipotecii lunare
  , trebuie să cunoaștem numărul de ani în luni și rata lunară a
@@ -49,12 +47,11 @@ Sugestie # 2: va trebui să utilizați obiectul
 Când matematica este corectă, rata lunară va fi
 egală cu 1073,64*/
 
-let n1 = (1 + monthInterestRate);
-let  numerator =  perioade * n1 * monthInterestRate;
+let n1 = Math.pow(1 + monthInterestRate, perioade);
+let numerator = principala * (n1 * monthInterestRate);
 let numitor = n1 - 1;
-let monthRate =  numerator / numitor;
+let monthRate = numerator / numitor
 console.log(monthRate);
-
 
 // 🏡 Task 3: Function
 /* Creați o funcție numită `mortgageCalculator` care combină toți
@@ -64,10 +61,13 @@ Dacă numele tău este `Oscar` hypothCalculator () ar trebui să
  returneze„ Oscar, rata ta lunară este de 1073,64 ”*/
 
 
+const hypothCalculator = () => {
+    return `${nume}, rata ta lunara este de ${rata_dobânzii}`
+}
+console.log(hypothCalculator());
 
 
-
-// 🏡 Task 4: Argumente and Parametri
+// 🏡 Task 4: Argumente si Parametri
 /* Înlocuiți variabilele din funcțiile dvs.
  cu parametri, astfel încât să puteți înlocui
  „P“, „I” și „N” când apelați funcția.
@@ -76,7 +76,22 @@ mortgageCalculator (200000, 0,05, 30); <-
 ar trebui să returneze 1.073,64*/
 
 
+const mortgageCalculator = (P, I, N) => {
+    I = I / 12;
+    N = N * 12;
+    return (P * ((Math.pow(1 + I, N) * I)) / (Math.pow(1 + I, N) - 1));
 
+    // let n1 = Math.pow(1 + interestInterestRate, period);
+    // let numerator = principala * (n1 * interestInterestRate);
+    // let numitor = n1 - 1;
+    // let monthRate =  numerator / numitor
+    // console.log(monthRate);
+
+
+    // P [I (1 + I) ^ N] / [(1 + I) ^ N - 1]
+
+}
+console.log(mortgageCalculator(200000, 0.05, 30));
 
 
 // 🏡 Task 5: Conditionals
@@ -92,7 +107,16 @@ Sugestie: pentru a scădea o rată a dobânzii cu 5%,
   În mod similar, pentru a crește rata dobânzii cu 5%, ați face o
    rată lunară * 1,05.*/
 
-
+const creditScore = (num) => {
+    if (num >= 740) {
+        return mortgageCalculator(200000, (0.05 * 0.95), 30)
+    } else if (num <= 660) {
+        return mortgageCalculator(200000, (0.05 * 1.05), 30)
+    } else {
+        return mortgageCalculator(200000, 0.05, 30)
+    }
+}
+console.log(creditScore(666));
 
 
 // 🏡 Task 6: Loops
@@ -115,3 +139,37 @@ scoata in consola:
 „{Name}, cu o rată a dobânzii de 0,06, rata lunară este de 1199 USD”*/
 
 
+// function variableInterestRate(P,I,N) {
+//     for (let i=I-0.02; i<=I+0.02; i+=0.005){
+//         let m =Math.round(P*i/12*[Math.pow((1+i/12),(N*12))] /[Math.pow((1+i/12),(N*12)) - 1])
+//         console.log(`${nume}, cu o rata dobanzii de ${i}, rata lunară este de ${m}`)
+//     };
+// }
+// variableInterestRate(200000, 0.07, 30);
+
+// const variableInterestRate=(name,suma,dobanda,ani,creditScore)=>{
+//     if(creditScore>740){
+//         dobanda=dobanda * 0.95;
+//     } else if(creditScore<660){
+//         dobanda= dobanda*1.05;
+//     } else if(creditScore>=660 && creditScore <=740){
+//         dobanda=dobanda+0;
+//     }else if(creditScore !==Number){
+//         return `Introduceti date reale`
+//     }
+//
+//     let dob1= dobanda*0.5;//0.02
+//     let dob2=dobanda+dob1;//0.06
+//     let ratap = 0.005;//
+//
+//     for (let i = dob1; i <=dob2 ; i+=ratap) {
+//         let newrat = +(i.toFixed(3));
+//         let MonthInterestRate = newrat / 12;
+//         let n1 = Math.pow((1 + MonthInterestRate), ani * 12);
+//         let numerator = suma * n1 * MonthInterestRate;
+//         let numitor = n1 - 1;
+//         let monthRate = (numerator / numitor).toFixed(2);
+//         console.log(`${name}, cu o rata lunara de ${newrat}, rata lunara este de este de ${monthRate} USD`);
+//     }
+// }
+// variableInterestRate('Ion', 200000, 0.04, 30, 700);

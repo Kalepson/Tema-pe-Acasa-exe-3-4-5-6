@@ -36,3 +36,9 @@ myFunction();
 // }
 //
 // console.log(sumare());
+
+const sumare = (num) =>{
+    return (num* (num+1)) / 2;
+}
+
+console.log(sumare(4));
